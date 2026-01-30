@@ -2,7 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -29,13 +31,19 @@ header nav .nav-right-section {
   align-items: center;
 }
 
+/* footer ul li a {  <--error detectado con "npx stylelint "main.css" --fix" */
+footer ul li a {
+  margin: 10px;
+  color: #5f6368;
+}
+
 nav .nav-right-section a {
   margin-right: 10px;
-  color: #000000;
+  color: #000;
 }
 
 nav .nav-right-section .menu-icon {
-  background-image: url('https://static.thenounproject.com/png/756729-200.png');
+  background-image: url("https://static.thenounproject.com/png/756729-200.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -55,10 +63,11 @@ main {
   text-align: center; /* ME CENTRO TODOS LOS SECTIONS DEL MAIN */
 }
 
+/* margin-bottom: 35px;  <--error detectado con "npx stylelint "main.css" --fix" */
 main .main-logo {
   width: 530px;
   margin: 0 auto;
-  margin-button: 35px;
+  margin-bottom: 35px;
 }
 
 main .main-logo img {
@@ -87,16 +96,18 @@ main .main-input input {
   outline: none; /* NOS QUITA EL BORDE CUANDO LE DAMOS CLICK A UN INPUT */
 }
 
-main .main-input-container:hover { /* HOVER ES UN PSEUDO ELEMENTO QUE ES UN EFECTO DE CUANDO PASAS EL CURSOR Y EL ELEMENTO HACE ALGO POR EJEMPLO UNA SOMBRA */
+main .main-input-container:hover {
+  /* HOVER ES UN PSEUDO ELEMENTO QUE ES UN EFECTO DE CUANDO PASAS EL CURSOR Y EL ELEMENTO HACE ALGO POR EJEMPLO UNA SOMBRA */
   box-shadow: 0 1px 6px 0 #20212447;
   transition: 1s all;
-   /* Para que no aparezca tan rápido la sombra le ponen el atributo
+
+  /* Para que no aparezca tan rápido la sombra le ponen el atributo
   transition: 200ms all; */
-  border-color: #dfe1e500
+  border-color: #dfe1e500;
 }
 
 main .main-input .search-icon {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; /* La palabra clave containcambiará el tamaño de la imagen de fondo para asegurarse de que permanezca completamente visible . */
@@ -106,7 +117,7 @@ main .main-input .search-icon {
 }
 
 main .main-input .micro-icon {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png');
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -127,7 +138,9 @@ main .main-buttons div {
 main .main-buttons button {
   height: 36px;
   background-color: #f2f2f2;
+
   /* border: 1px solid #f2f2f2; */
+
   /* border: 0; */
   border: 1px solid transparent;
   font-size: 14px;
@@ -139,8 +152,8 @@ main .main-buttons button {
 
 main .main-buttons button:hover {
   border: 1px solid #c6c6c6;
-  box-shadow: 0px 1px 1px #000001;
-  color: #222222;
+  box-shadow: 0 1px 1px #000001;
+  color: #222;
   cursor: pointer;
 }
 
@@ -173,8 +186,3 @@ footer .footer-left {
 footer .footer-right {
   justify-content: right;
 }
-
- footer ul li a {
-   margin: 10px;
-   color: #5f6368;
- }
