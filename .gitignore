@@ -1,0 +1,22 @@
+# --- Carpetas de Sistema y Editores ---
+.vscode/
+.idea/
+.DS_Store
+*.log
+thumbs.db
+
+# --- Node.js / Dependencias ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- Archivos de entorno (SECRETOS) ---
+# ¡Nunca subas tus contraseñas o llaves de API!
+.env
+.env.local
+
+# --- Temporales de Linux/Vim ---
+*~
+*.swp
+.fuse_hidden*
